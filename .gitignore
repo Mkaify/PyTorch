@@ -1,0 +1,110 @@
+# Security - API Keys, Tokens, and Secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.p12
+*.pfx
+*.cer
+*.crt
+secrets.txt
+credentials.json
+service-account.json
+*.credentials
+config/secrets.yml
+config/credentials.yml
+
+# API Keys and Tokens
+.api_keys
+.tokens
+openai_key.txt
+anthropic_key.txt
+huggingface_token.txt
+wandb_api_key.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyTorch and ML Specific
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+checkpoints/
+saved_models/
+models/*.pth
+models/*.pt
+wandb/
+mlruns/
+outputs/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Data files (can be large and may contain sensitive info)
+data/*.csv
+data/*.json
+data/*.txt
+*.sqlite
+*.db
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
