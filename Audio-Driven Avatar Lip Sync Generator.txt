@@ -1,0 +1,21 @@
+⚙️ Dependencies: You need to install Wav2Lip and its prerequisites from the official repo
+GitHub: https://github.com/Rudrabha/Wav2Lip
+
+# Clone and set up Wav2Lip
+git clone https://github.com/Rudrabha/Wav2Lip.git
+cd Wav2Lip
+pip install -r requirements.txt
+# Download pretrained model
+gdown https://drive.google.com/uc?id=1rwXqTq4J0zK0h8aSAhE_wxOYpUO7Yj4P -O checkpoints/wav2lip.pth
+Code to Run Lip Sync
+# Run the lip-sync script with your inputs
+python inference.py \
+  --checkpoint_path checkpoints/wav2lip.pth \
+  --face "data/avatar.jpg" \
+  --audio "data/sample_speech.wav" \
+  --outfile "outputs/lipsynced_video.mp4"
+--face: Static image or video of a person's face (should show lips clearly)
+
+--audio: Speech audio file (e.g., WAV format, 16 kHz)
+
+--outfile: Output path for generated video
